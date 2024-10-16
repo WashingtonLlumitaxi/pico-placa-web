@@ -3,6 +3,7 @@ import { PlacaService } from '../services/placa.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-validar-placa',
   standalone: true,
@@ -10,6 +11,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './validar-placa.component.html',
   styleUrl: './validar-placa.component.css'
 })
+
 export class ValidarPlacaComponent {
   placa: string = '';
   fechaHora: string = '';
