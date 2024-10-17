@@ -19,8 +19,8 @@ interface PlacaResponseDTO {
 
 export class PlacaService {
 
-    private apiUrl = 'http://localhost:8080/api/v1/placas';
-    //private apiUrl = 'https://picoplacaapi-latest.onrender.com/api/v1/placas';
+    //private apiUrl = 'http://localhost:8080/api/v1/placas';
+    private apiUrl = 'https://picoplacaapi-latest.onrender.com/api/v1/placas';
 
 
     constructor(private http: HttpClient) { }
