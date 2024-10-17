@@ -42,11 +42,8 @@ export class ValidarPlacaComponent {
           this.mensaje = err.error.message;
         } else {
           this.mensaje = 'Ocurrió un error al validar la placa';
-
         }
-
       }
     });
   }
-
 }

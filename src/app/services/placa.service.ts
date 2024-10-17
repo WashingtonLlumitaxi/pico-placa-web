@@ -27,7 +27,6 @@ export class PlacaService {
 
     validarPlaca(placaRequest: PlacaRequestDTO): Observable<PlacaResponseDTO> {
         return this.http.post<PlacaResponseDTO>(`${this.apiUrl}/validar`, placaRequest);
-        console.log('Solicitud enviada:', placaRequest);
         //return this.http.post<PlacaResponseDTO>(this.apiUrl, placaRequest);
     }
 
