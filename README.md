@@ -1,27 +1,53 @@
 # Picoplacaweb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+![picoplaca](https://github.com/user-attachments/assets/02f90938-6a23-4470-a6eb-ef3678f9f2b2)
 
-## Development server
+# Fronted de la aplicación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Link: https://github.com/WashingtonLlumitaxi/pico-placa-web
+ 
+## Ejecución del proyecto
+- Fronted desarrollado con Angular 18
+- Versiones
 
-## Code scaffolding
+Angular CLI: 18.1.4
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Node: 20.17.0
 
-## Build
+Package Manager: npm 10.8.2
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación 
 
-## Running unit tests
+- Clona el repositorio
+  
+  git clone https://github.com/WashingtonLlumitaxi/pico-placa-web.git
+  
+- Entra en el directorio del proyecto
+  
+  cd pico-placa-web
+  
+- Instalación de dependencias
+  
+  np install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Ejecuta la aplicación
+  
+  ng serve
 
-## Running end-to-end tests
+## Uso
+- Endpoint
+  
+http://localhost:4200/
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   
+# Despligue de la aplicación
 
-## Further help
+La aplicación se halla desplegada con Netlify.
+- Pasos para el despliegue
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- 1 Crear el archivo dist en el proyecto con el siguiente comando npm run build
+- 2 Subir el proyecto en Github
+- 2 Compartir el proyecto de Github con Netlify
+- 3 Realiza el deploy
+
+    
