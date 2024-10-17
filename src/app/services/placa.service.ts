@@ -20,11 +20,16 @@ interface PlacaResponseDTO {
 export class PlacaService {
 
     private apiUrl = 'http://localhost:8080/api/v1/placas';
-    
-    constructor(private http: HttpClient) {}
+    //private apiUrl = 'https://picoplacaapi-latest.onrender.com/api/v1/placas';
 
-    validarPlaca(placaRequest: PlacaRequestDTO): Observable<PlacaResponseDTO>{
+
+    constructor(private http: HttpClient) { }
+
+    validarPlaca(placaRequest: PlacaRequestDTO): Observable<PlacaResponseDTO> {
         return this.http.post<PlacaResponseDTO>(`${this.apiUrl}/validar`, placaRequest);
+        console.log('Solicitud enviada:', placaRequest);
+        //return this.http.post<PlacaResponseDTO>(this.apiUrl, placaRequest);
     }
+
 
 }

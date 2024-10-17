@@ -1,25 +1,30 @@
-<div class="container mt-5">
+<div class="container container-custom py-4">
+  <h1 class="text-center text-danger py-2">PICO Y PLACA</h1>
+  
   <div class="row justify-content-center">
-    <div class="col-md-6">
-      <!-- Imagen sobre el formulario -->
-      <div class="text-center mb-4">
-        <img alt="placa" src="/./src/placa copy.jpg" class="img-fluid" style="max-width: 150px">
-
-      </div>
+    <div class=" col-md-5  my-2 bg-primary text-white text-center">
+      <h4 class="py-2">Horarios de Restricción</h4>
+    </div>
+    <div class="card-header text-white text-center my-4">
+      <img src="picoplaca.jpg" alt="Imagen de Pico y Placa" class="img-fluid mx-auto d-block" style="max-width: 650px;">
+    </div>
+    <div class="col-md-5"> 
       <div class="card">
-        <div class="card-header bg-primary text-white">
-          <h4 class="mb-0">Validación de Pico y Placa</h4>
+        <div class="card-header bg-primary text-white text-center">
+          <h4 class="mb-0">Consulta tu Restricción</h4>
         </div>
         <div class="card-body">
           <form (ngSubmit)="onSubmit()" #placaForm="ngForm">
             <div class="form-group">
               <label for="placa">Placa:</label>
-              <input type="text" id="placa" [(ngModel)]="placa" name="placa" class="form-control" required placeholder="Ingrese la placa">
+              <input type="text" id="placa" [(ngModel)]="placa" name="placa" class="form-control" required
+                placeholder="Ingrese la placa">
             </div>
 
             <div class="form-group mt-3">
               <label for="fechaHora">Fecha y Hora:</label>
-              <input type="datetime-local" id="fechaHora" [(ngModel)]="fechaHora" name="fechaHora" class="form-control" required>
+              <input type="datetime-local" id="fechaHora" [(ngModel)]="fechaHora" name="fechaHora" class="form-control"
+                required>
             </div>
 
             <button type="submit" class="btn btn-success mt-4 w-100" [disabled]="!placaForm.form.valid">Validar</button>
@@ -31,6 +36,12 @@
           </div>
         </div>
       </div>
+      <div class="card-header bg-primary text-white text-center my-4">
+        <h4 class="py-2">Perímetro de Restricción</h4>      
+      </div>
     </div>
+  </div>
+  <div class="row justify-content-center">
+    <img src="mapa.png" alt="Imagen de Pico y Placa" class="img-fluid" style="max-width: 800px;">
   </div>
 </div>

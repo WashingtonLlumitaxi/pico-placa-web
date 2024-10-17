@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body {
+  background-color: #007bff;
+  color: white;
+}
+
+.container-custom {
+  background-color: hsl(60, 13%, 91%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
